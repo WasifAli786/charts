@@ -1,0 +1,3 @@
+function showNote(event){
+
+}

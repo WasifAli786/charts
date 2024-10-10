@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+::-webkit-scrollbar{
+  @apply w-1 h-full;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-outer_space rounded-lg;
+}
+
+@layer utilities {
+  .div {
+    @apply container max-w-6xl mx-auto;
+  }
+
+  img.img{
+    height: 40px;
+    width: 40px;
+  }
+  
+  body{
+     @apply bg-eerie_black-200 text-seasalt-900;
+      font-family: "Manrope", sans-serif;
+      font-optical-sizing: auto;
+      font-style: normal;    
+  }
+
+  
+  input[type="checkbox"]:checked{
+    @apply bg-[url('../images/check.jpeg')] bg-cover;
+  }
+}
